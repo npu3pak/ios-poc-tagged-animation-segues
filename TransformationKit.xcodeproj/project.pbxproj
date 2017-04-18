@@ -11,8 +11,6 @@
 		DBC70A181EA6155600B8F35A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC70A161EA6155600B8F35A /* Main.storyboard */; };
 		DBC70A1A1EA6155600B8F35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC70A191EA6155600B8F35A /* Assets.xcassets */; };
 		DBC70A1D1EA6155600B8F35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC70A1B1EA6155600B8F35A /* LaunchScreen.storyboard */; };
-		DBC70A251EA6156C00B8F35A /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC70A241EA6156C00B8F35A /* LeftViewController.swift */; };
-		DBC70A271EA6157400B8F35A /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC70A261EA6157400B8F35A /* RightViewController.swift */; };
 		DBC70A2A1EA6169F00B8F35A /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC70A291EA6169F00B8F35A /* ViewExtension.swift */; };
 		DBC70A2C1EA61F4400B8F35A /* TaggedAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC70A2B1EA61F4400B8F35A /* TaggedAnimationSegue.swift */; };
 /* End PBXBuildFile section */
@@ -24,8 +22,6 @@
 		DBC70A191EA6155600B8F35A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC70A1C1EA6155600B8F35A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBC70A1E1EA6155600B8F35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBC70A241EA6156C00B8F35A /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
-		DBC70A261EA6157400B8F35A /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		DBC70A291EA6169F00B8F35A /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		DBC70A2B1EA61F4400B8F35A /* TaggedAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggedAnimationSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,8 +59,6 @@
 				DBC70A161EA6155600B8F35A /* Main.storyboard */,
 				DBC70A2B1EA61F4400B8F35A /* TaggedAnimationSegue.swift */,
 				DBC70A291EA6169F00B8F35A /* ViewExtension.swift */,
-				DBC70A241EA6156C00B8F35A /* LeftViewController.swift */,
-				DBC70A261EA6157400B8F35A /* RightViewController.swift */,
 				DBC70A281EA615BE00B8F35A /* Support */,
 			);
 			path = TransformationKit;
@@ -154,8 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC70A251EA6156C00B8F35A /* LeftViewController.swift in Sources */,
-				DBC70A271EA6157400B8F35A /* RightViewController.swift in Sources */,
 				DBC70A2C1EA61F4400B8F35A /* TaggedAnimationSegue.swift in Sources */,
 				DBC70A2A1EA6169F00B8F35A /* ViewExtension.swift in Sources */,
 				DBC70A131EA6155600B8F35A /* AppDelegate.swift in Sources */,
@@ -324,6 +316,7 @@
 				DBC70A231EA6155600B8F35A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
