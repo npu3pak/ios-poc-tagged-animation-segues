@@ -9,15 +9,18 @@
 import UIKit
 import ObjectiveC
 
-fileprivate var ViewAnimationTagHandle: UInt8 = 0
 
 public extension UIView {
+    struct CustomProperties {
+        static var animationTag: String?
+    }
+    
     @IBInspectable public var animationTag: String? {
         get {
-            return objc_getAssociatedObject(self, &ViewAnimationTagHandle) as? String
+            return objc_getAssociatedObject(self, &CustomProperties.animationTag) as? String
         }
         set {
-            objc_setAssociatedObject(self, &ViewAnimationTagHandle, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, &CustomProperties.animationTag, newValue as NSString?, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
     }
 }
