@@ -10,11 +10,10 @@ import UIKit
 
 class TaggedAnimationSegue: UIStoryboardSegue {
     private var originalFrames = [String: CGRect]()
+    private var originalAlphas = [String: CGFloat]()
     
     override func perform() {
-        
-        
-        UIView.animate(withDuration: 0.3,
+        UIView.animate(withDuration: 0.7,
                        animations: animateTransition,
                        completion: finishTransition)
     }
@@ -24,6 +23,9 @@ class TaggedAnimationSegue: UIStoryboardSegue {
             if let rightSubview = destination.view.subviews.first(where: {$0.animationTag == leftSubview.animationTag}) {
                 originalFrames[leftSubview.animationTag!] = leftSubview.frame
                 leftSubview.frame = destination.view.convert(rightSubview.frame, to: source.view)
+            } else {
+                originalAlphas[leftSubview.animationTag!] = leftSubview.alpha
+                leftSubview.alpha = 0
             }
         }
     }
@@ -34,9 +36,12 @@ class TaggedAnimationSegue: UIStoryboardSegue {
         source.view.subviews.filter({$0.animationTag != nil}).forEach() { leftSubview in
             if let originalFrame = originalFrames[leftSubview.animationTag!] {
                 leftSubview.frame = originalFrame
+            } else if let originalAlpha = originalAlphas[leftSubview.animationTag!] {
+                leftSubview.alpha = originalAlpha
             }
         }
         
         originalFrames.removeAll()
+        originalAlphas.removeAll()
     }
 }
