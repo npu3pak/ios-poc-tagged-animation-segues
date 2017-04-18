@@ -31,7 +31,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationTag" value="Cat"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="391-JL-w48" customClass="Next">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="391-JL-w48">
                                 <rect key="frame" x="144" y="518" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <userDefinedRuntimeAttributes>
@@ -101,7 +101,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationTag" value="Dogs"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSs-MK-9Lm" customClass="Next">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSs-MK-9Lm">
                                 <rect key="frame" x="144" y="518" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <userDefinedRuntimeAttributes>
@@ -169,7 +169,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationTag" value="Cat"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-Cc-abE" customClass="Next">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-Cc-abE">
                                 <rect key="frame" x="144" y="518" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <userDefinedRuntimeAttributes>
@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jU6-Ye-IQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2303" y="352"/>
+            <point key="canvasLocation" x="2357" y="352"/>
         </scene>
     </scenes>
     <resources>

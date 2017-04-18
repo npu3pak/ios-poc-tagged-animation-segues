@@ -13,7 +13,7 @@ class TaggedAnimationSegue: UIStoryboardSegue {
     private var originalAlphas = [String: CGFloat]()
     
     override func perform() {
-        UIView.animate(withDuration: 0.7,
+        UIView.animate(withDuration: 0.4,
                        animations: animateTransition,
                        completion: finishTransition)
     }
